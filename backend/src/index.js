@@ -7,7 +7,7 @@ import {connectDB} from "./lib/db.js"
 import authRoutes from "./routes/auth.route.js"
 import messageRoutes from "./routes/message.routes.js"
 import {app,io,server} from "./lib/socket.js"
-import {path} from "path";
+import path from "path";
 const PORT = process.env.PORT;
 const __dirname = path.resolve();
 app.use(express.json());
